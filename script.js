@@ -59,14 +59,13 @@ const submit = document.querySelector("#submit");
 let quizDataCount = 0;
 let score = 0;
 const deselectAns = ()=>{
-    let answer;
+    let answer = null;
     answers.forEach(ansElement => {
         if(ansElement.checked){
             answer = ansElement.id;
         }
-        return answer;
     });
-
+    return answer;
 }
 const quizLoad = () => {
     deselectAns();
